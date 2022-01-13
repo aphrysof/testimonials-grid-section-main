@@ -99,15 +99,26 @@ p{
     color: hsl(0, 5%, 41%);
 }
 
-@media only ssscreen and (min-width: 375px) {
+
+@media (max-width: 767.98px) {
     .container{
-        display: grid;
+
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        width: 100%;
+        padding: 10px;
     }
-    .patrick__abrams, .kira__wittle, .daniel__clifford {
+    .jeanette__harmon, .daniel__clifford, .jonathan__walter,.kira__wittle, .patrick__abrams{
 
         grid-column: auto;
         grid-row: auto;
+        
+        
     }
+    .img__responsive{
+
+        position: absolute;
+        left: 60%;
+        margin-top: 10px;
+     }
 }
