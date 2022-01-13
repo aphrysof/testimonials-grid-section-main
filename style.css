@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    max-width: 1440px;
+}
+.container{
+   
+    width: 1000px;
+    height: 80vh;  
+    margin: 10vh auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+
+}
+.img__responsive{
+
+   position: absolute;
+   top: 10%;
+   left: 35%;
+}
+.daniel__clifford{
+
+    grid-column:  span 2;
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+}
+.title {
+    position: relative;
+    z-index: 1;
+}
+.jonathan__walter{
+    
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+     
+}
+.jeanette__harmon{
+    
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+
+}
+.patrick__abrams{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+    border-radius: 10px;
+}
+.kira__wittle{
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+    border-radius: 10px;
+}
+.card__container{
+    padding: 20px;
+}
+.avatar {
+    display: flex;
+    
+    
+}
+.avatar__image{
+    
+    border-radius: 50px;
+    border-color: white;
+    height: 2.5em;
+
+}
+.avatar__details{
+    color: white;
+    padding-left: 15px;
+}
+span{
+    opacity: 50%;
+}
+.candidate__details{
+    padding: 5px;
+    color: white;
+}
+p{
+    opacity: 70%;
+    margin: 5px 0 5px;
+}
+.avatar__detail{
+    color:hsl(0, 5%, 41%);
+    padding-left: 15px;
+}
+.candidate__detail{
+    padding: 5px;
+    color: hsl(0, 5%, 41%);
+}
+
+@media only ssscreen and (min-width: 375px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .patrick__abrams, .kira__wittle, .daniel__clifford {
+
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
